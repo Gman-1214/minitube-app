@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #000;
+    box-sizing: border-box;
+}
+body.dark input,
+body.dark textarea {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 5px 15px 0;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+
+.videoCard {
+    background-color: #f0f0f0;
+    color: #000;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+body.dark .videoCard {
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}

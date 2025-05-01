@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MiniTube - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎬 MiniTube</h1>
+
+    <label class="theme-toggle">
+        <input type="checkbox" id="themeToggle" onchange="toggleTheme()"> Dark Mode
+    </label>
+
+    <div id="authSection">
+        <h2>Login / Register</h2>
+        <input type="text" id="authUsername" placeholder="Username">
+        <input type="password" id="authPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Register</button>
+    </div>
+
+    <div id="appSection" style="display: none;">
+        <p>Welcome, <span id="currentUser"></span>! <button onclick="logout()">Logout</button></p>
+
+        <h2>Upload a New Video</h2>
+        <input type="text" id="videoTitle" placeholder="Video Title">
+        <textarea id="videoDescription" placeholder="Video Description"></textarea>
+        <input type="file" id="videoUpload" accept="video/*">
+        <button onclick="uploadVideo()">Upload Video</button>
+
+        <h2>Search Videos</h2>
+        <input type="text" id="searchInput" oninput="searchVideos()" placeholder="Search by title...">
+        <div id="videoList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
